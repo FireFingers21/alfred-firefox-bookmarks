@@ -5,10 +5,10 @@ case "${releaseChannel}" in
 	"firefox")
 		readonly versionCode="2656FF1E876E9973"
 		;;
-	"firefoxdeveloperedition")
+	"firefoxDeveloperEdition")
 		readonly versionCode="1F42C145FFDD4120"
 		;;
-	"nightly")
+	"firefoxNightly")
 		readonly versionCode="31210A081F86E80E"
 		;;
 esac
@@ -27,7 +27,6 @@ cat << EOB
 {"items": [
 	{
 		"title": "Open Firefox Profile Manager",
-		"subtitle": "Manage profiles in the About Profiles page",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
 		"variables": { "pref_id": "profileManager" }
 	},
@@ -39,16 +38,10 @@ cat << EOB
 		"variables": { "pref_id": "profilePath" }
 	},
 	{
-		"title": "Release Channel Settings",
-		"subtitle": "Select your preferred build for ${alfred_workflow_name}",
+	    "title": "Configure Workflow...",
+		"subtitle": "Open the configuration window for ${alfred_workflow_name}",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
-		"variables": { "pref_id": "build" }
-	},
-	{
-		"title": "Browser Settings",
-		"subtitle": "Select the default browsers for ${alfred_workflow_name}",
-		"icon": { "path": "images/${releaseChannel}Logo.png" },
-		"variables": { "pref_id": "browser" }
+		"variables": { "pref_id": "configure" }
 	},
 ]}
 EOB

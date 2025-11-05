@@ -6,26 +6,25 @@ Search Firefox bookmarks in Alfred
 
 ## Setup
 
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which now comes preinstalled on macOS Sequoia 15.0.0 and later.
+This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
 
 ## Usage
 
-Search for your [Firefox](https://www.mozilla.org/firefox/new) bookmarks using the `bm` keyword.
+Search for your [Firefox](https://www.mozilla.org/firefox/new) bookmarks via the `bm` keyword. Type to refine your search.
 
 ![Searching for Firefox bookmarks](Workflow/images/about/keyword.png)
 
-Type to refine your search. Bookmarks are always filtered by Name, while filtering by URL, Tags, Keyword, and bookmark description are configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+Bookmarks are always searchable by Name, while filtering by Description, Keyword, URL, and Tag is configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ![Narrowing search for Firefox bookmarks](Workflow/images/about/tagFilter.png)
 
-* <kbd>↩</kbd> Open bookmark in primary browser
-* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↩</kbd> Open in primary browser without closing Alfred (when browser is in focus)
-* <kbd>⌘</kbd><kbd>↩</kbd> Open bookmark in secondary browser
-* <kbd>⌘</kbd><kbd>C</kbd> Copy bookmark URL
-* <kbd>⌘</kbd><kbd>L</kbd> View all tags and full URL in Large Type
-* <kbd>⇧</kbd> Hold to show bookmark description
+* <kbd>↩</kbd> Open bookmark in primary browser.
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↩</kbd> Open in primary browser without closing Alfred.
+* <kbd>⌘</kbd><kbd>↩</kbd> Open bookmark in secondary browser.
+* <kbd>⌘</kbd><kbd>L</kbd> View all tags and full URL in Large Type.
+* <kbd>⇧</kbd> Hold to show bookmark description.
 
-Firefox Developer Edition and Nightly builds are also supported and [configurable](https://www.alfredapp.com/help/workflows/user-configuration/). The Workflow's icon colours and bookmarks will change based on the selected Release Channel.
+Firefox Developer Edition and Nightly builds are also supported. The Workflow's icon colours and bookmarks will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
 
 ![Searching for Firefox bookmarks using Nightly](Workflow/images/about/otherBuilds.png)
 
@@ -33,7 +32,7 @@ Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows
 
 ![Other actions](Workflow/images/about/inlineSettings.png)
 
-Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut to search for your bookmarks.
+Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut for searching your bookmarks.
 
 Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
 
