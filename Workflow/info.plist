@@ -804,7 +804,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2025.4</string>
+	<string>2025.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-firefox-bookmarks</string>
 </dict>
