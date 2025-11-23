@@ -1,6 +1,6 @@
 # <img src='Workflow/icon.png' width='45' align='center' alt='icon'> Firefox Bookmarks
 
-Search Firefox bookmarks in Alfred
+Search Firefox bookmarks in Alfred. For the Zen Browser, see [Zen Bookmarks](https://github.com/FireFingers21/alfred-zen-bookmarks).
 
 [⤓ Install from the Alfred Gallery](https://alfred.app/workflows/firefingers21/firefox-bookmarks/)
 
