@@ -8,6 +8,19 @@
 	<string>Shared</string>
 	<key>connections</key>
 	<dict>
+		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1548B684-9B57-4C83-889B-7AB17368732A</key>
 		<array>
 			<dict>
@@ -41,6 +54,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>84C707B7-F9D7-4CF2-9AD1-C73C9086055D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -111,46 +137,40 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</string>
+				<key>modifiers</key>
+				<integer>1179648</integer>
+				<key>modifiersubtext</key>
+				<string>⇧⌘↩ Open in primary browser without closing Alfred</string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>FireFingers21</string>
 	<key>description</key>
-	<string>Search Firefox bookmarks</string>
+	<string>Search Firefox bookmarks &amp; history</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Firefox Bookmarks</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>1548B684-9B57-4C83-889B-7AB17368732A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -194,7 +214,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>{var:firefox_keyword}</string>
+				<string>{var:bookmarks_keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -214,7 +234,7 @@
 				<key>skipuniversalaction</key>
 				<true/>
 				<key>subtext</key>
-				<string>{const:alfred_workflow_description}</string>
+				<string>Search Firefox bookmarks</string>
 				<key>title</key>
 				<string>Search Bookmarks...</string>
 				<key>type</key>
@@ -230,10 +250,154 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>1548B684-9B57-4C83-889B-7AB17368732A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>84C707B7-F9D7-4CF2-9AD1-C73C9086055D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>{var:history_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>history.sh</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Search Firefox history</string>
+				<key>title</key>
+				<string>Search History...</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Secondary browser selection
+[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
+
+# Primary browser selection
+[[ -z "${browser}" ]] &amp;&amp; open "${1}" || open -b "${browser}" "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -283,7 +447,7 @@ esac</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>{var:firefox_keyword}::||{var:firefox_keyword} ::</string>
+				<string>{var:bookmarks_keyword}::||{var:bookmarks_keyword} ::||{var:history_keyword}::</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -440,6 +604,15 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 **Note**: Due to a limitation of Firefox, bookmark changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.</string>
 	<key>uidata</key>
 	<dict>
+		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
 		<key>1548B684-9B57-4C83-889B-7AB17368732A</key>
 		<dict>
 			<key>colorindex</key>
@@ -489,6 +662,15 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>ypos</key>
 			<real>385</real>
 		</dict>
+		<key>84C707B7-F9D7-4CF2-9AD1-C73C9086055D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
 		<key>94A76A92-67A6-439F-866A-1ADB8A6E20A7</key>
 		<dict>
 			<key>colorindex</key>
@@ -503,11 +685,22 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>note</key>
-			<string>Main Action &amp; Keyword</string>
+			<string>Bookmarks Keyword</string>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
 			<real>30</real>
+		</dict>
+		<key>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Open URL</string>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 		<key>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</key>
 		<dict>
@@ -517,6 +710,17 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<real>180</real>
 			<key>ypos</key>
 			<real>390</real>
+		</dict>
+		<key>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>History Keyword</string>
+			<key>xpos</key>
+			<real>180</real>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -536,11 +740,32 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>description</key>
 			<string></string>
 			<key>label</key>
-			<string>Firefox Keyword</string>
+			<string>Bookmarks Keyword</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>firefox_keyword</string>
+			<string>bookmarks_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>bh</string>
+				<key>placeholder</key>
+				<string>bh</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keywords for searching bookmarks &amp; history.</string>
+			<key>label</key>
+			<string>History Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>history_keyword</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -610,7 +835,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<string>Search by Tag</string>
 			</dict>
 			<key>description</key>
-			<string>Prefixing words with # filters by Tag</string>
+			<string>Prefixing words with # filters by Tag.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -648,7 +873,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<string>Enable Quick Look</string>
 			</dict>
 			<key>description</key>
-			<string>Tap shift or ⌘Y to Quick Look bookmarks</string>
+			<string>Tap shift or ⌘Y to Quick Look bookmarks &amp; history.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -706,7 +931,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Primary browser for opening bookmarks</string>
+			<string>Primary browser for opening bookmarks &amp; history.</string>
 			<key>label</key>
 			<string>Default Browsers</string>
 			<key>type</key>
@@ -764,7 +989,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Secondary browser for opening bookmarks</string>
+			<string>Secondary browser for opening bookmarks &amp; history.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -794,7 +1019,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Select your installed Firefox build</string>
+			<string>Select your installed Firefox build.</string>
 			<key>label</key>
 			<string>Release Channel</string>
 			<key>type</key>
