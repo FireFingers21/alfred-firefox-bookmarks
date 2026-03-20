@@ -589,19 +589,28 @@ Bookmarks are always searchable by Name, while filtering by Description, Keyword
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type.
 * &lt;kbd&gt;⇧&lt;/kbd&gt; Hold to show bookmark description.
 
-Firefox Developer Edition and Nightly builds are also supported. The Workflow's icon colours and bookmarks will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
+Search your Firefox history via the `bh` keyword. History entries are searchable by Name and URL.
+
+![Searching Firefox history](images/about/history.png)
+
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open entry in primary browser.
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open entry in secondary browser.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View full Date and URL in Large Type.
+
+Firefox Developer Edition and Nightly builds are also supported. The Workflow's icon colours, bookmarks, and history will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
 
 ![Searching for Firefox bookmarks using Nightly](images/about/otherBuilds.png)
 
-Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows/inputs/keyword) to access other actions, including opening the [Firefox Profile Manager](https://support.mozilla.org/kb/profile-manager-create-remove-switch-firefox-profiles). Bookmarks are only indexed from the default profile, which can be changed from the Profile Manager in each Firefox build.
+Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows/inputs/keyword) to access other actions, including opening the [Firefox Profile Manager](https://support.mozilla.org/kb/profile-manager-create-remove-switch-firefox-profiles). Bookmarks and history are only indexed from the default profile, which can be changed from the Profile Manager in each Firefox build.
 
 ![Other actions](images/about/inlineSettings.png)
 
-Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut for searching your bookmarks.
+Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
 Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
 
-**Note**: Due to a limitation of Firefox, bookmark changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.</string>
+**Note**: Due to a Firefox limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.</string>
 	<key>uidata</key>
 	<dict>
 		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
