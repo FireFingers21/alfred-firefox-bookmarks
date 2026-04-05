@@ -33,13 +33,14 @@ cat << EOB
 	{
 		"title": "Open Default Profile in Finder",
 		"subtitle": "${defaultProfileSubtext}",
-		"arg": "${defaultProfileArg}",
+		"arg": "file://${defaultProfileArg}",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
 		"variables": { "pref_id": "profilePath" }
 	},
 	{
 	    "title": "Configure Workflow...",
 		"subtitle": "Open the configuration window for ${alfred_workflow_name}",
+		"arg": "alfredpreferences://navigateto/workflows>workflow>${alfred_workflow_uid}>userconfig",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
 		"variables": { "pref_id": "configure" }
 	},
