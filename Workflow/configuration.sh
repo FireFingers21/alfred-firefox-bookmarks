@@ -12,7 +12,7 @@ case "${releaseChannel}" in
 		readonly versionCode="31210A081F86E80E"
 		;;
 esac
-readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/Firefox/installs.ini")
+readonly defaultProfile=$(awk -v versionCode="${versionCode}" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/Firefox/installs.ini")
 defaultProfilePath="/Library/Application Support/Firefox/${defaultProfile}"
 
 if [[ -z ${defaultProfile} ]]; then
