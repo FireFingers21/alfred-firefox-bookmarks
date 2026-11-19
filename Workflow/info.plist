@@ -532,9 +532,8 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Setup
-
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
+	<string>&gt; [!NOTE]
+&gt; Due to a Firefox limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.
 
 ## Usage
 
@@ -571,9 +570,8 @@ Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows
 
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
-Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
-
-**Note**: Due to a Firefox limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.</string>
+&gt; [!TIP]
+&gt; Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.</string>
 	<key>uidata</key>
 	<dict>
 		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
@@ -904,7 +902,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Primary browser for opening bookmarks &amp; history.</string>
+			<string></string>
 			<key>label</key>
 			<string>Default Browsers</string>
 			<key>type</key>
@@ -958,7 +956,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Secondary browser for opening bookmarks &amp; history.</string>
+			<string>Primary &amp; secondary browsers for opening links.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>

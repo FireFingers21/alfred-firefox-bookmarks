@@ -4,10 +4,6 @@ Search Firefox bookmarks and history in Alfred. For the Zen Browser, see [Zen Bo
 
 [⤓ Install from the Alfred Gallery](https://alfred.app/workflows/firefingers21/firefox-bookmarks/)
 
-## Setup
-
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
-
 ## Usage
 
 Search for your [Firefox](https://www.mozilla.org/firefox/new) bookmarks via the `bm` keyword. Type to refine your search.
@@ -43,6 +39,8 @@ Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows
 
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
-Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
+> [!TIP]
+> Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
 
-**Note**: Due to a Firefox limitation, bookmark & history changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.
+> [!NOTE]
+> Due to a Firefox limitation, bookmark & history changes may take time to appear in Alfred. Restarting Firefox will make all changes appear immediately.
